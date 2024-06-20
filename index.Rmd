@@ -15,6 +15,6 @@ output:
 
 <img src="figs/logo.jpg" 
         alt="Picture" 
-        width="195" 
-        height="57" 
+        width="250" 
+        height="73" 
         style="display: block; margin: 0 auto" />
