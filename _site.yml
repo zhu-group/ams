@@ -1,0 +1,22 @@
+name: "应用数理统计"
+output_dir: "docs"  # docs directory of master branch
+navbar:
+  title: "应用数理统计"
+  type: inverse
+  left:
+    - text: "课程主页"
+      icon: fa-bell-o
+      href: index.html
+    - text: "日程安排"
+      icon: fa-calendar
+      href: schedule.html
+    - text: "课后练习"
+      icon: fa-laptop
+      href: homeworks.html        
+    - text: "课程资源"
+      icon: fa-wrench
+      href: resource.html   
+output:
+  html_document:
+    theme: readable
+    highlight: pygments

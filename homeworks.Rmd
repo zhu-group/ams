@@ -1,0 +1,8 @@
+---
+title: "课后练习"
+output:
+  html_document:
+    df_print: paged
+---
+
+练习以R语言实现。题目待定。

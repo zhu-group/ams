@@ -1,0 +1,9 @@
+---
+title: "课程资源"
+output:
+  html_document:
+    df_print: paged
+---
+
+该部分介绍统计软件的下载、安装，并包括其他链接资源等。
+
