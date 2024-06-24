@@ -23,7 +23,7 @@ output:
 
 ### 教材
 
-应用数理统计方法, 陶澍, 中国环境科学出版社, 1994, 433页 [下载链接](https://zhu-group.github.io/ese335/download/应用数理统计方法_陶澍-清晰版.pdf)
+应用数理统计方法, 陶澍, 中国环境科学出版社, 1994, 433页 [下载链接](https://zhu-group.github.io/ams/download/应用数理统计方法_陶澍-清晰版.pdf)
 
 
 <img src="figs/logo.jpg" 
