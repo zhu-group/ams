@@ -2,8 +2,22 @@
 title: "课程资源"
 output:
   html_document:
-    df_print: paged
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
 ---
 
-该部分介绍统计软件的下载、安装，并包括其他链接资源等。
+# RStudio桌面版
 
+本课程练习使用[RStudio桌面版](https://rstudio.com/)，并建议使用[R语言](https://www.r-project.org/)编写代码。  
+
+**请先安装R, 再安装RStudio桌面版**
+
+* 安装 [R (v4.4.1)](https://cran.rstudio.com/) 
+* 安装 [RStudio桌面版 (2024.04.2+764)](https://rstudio.com/products/rstudio/download/)
+
+# 可视化网站
+
+* [Seeing theory](https://seeing-theory.brown.edu)
+* [Statistical visualizations](https://rpsychologist.com/viz/)

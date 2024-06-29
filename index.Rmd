@@ -2,7 +2,10 @@
 title: "教学大纲"
 output:
   html_document:
-    df_print: paged
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
 ---
 
 ### 课程简介

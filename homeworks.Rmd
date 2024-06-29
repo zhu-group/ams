@@ -2,7 +2,118 @@
 title: "课后练习"
 output:
   html_document:
-    df_print: paged
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
 ---
 
-练习以R语言实现。题目待定。
+***
+
+**说明：** 
+
++ 练习以R语言实现；
++ 部分教程请参考南科大环境学院《环境数据分析》网站。网站为英文，请自行翻译。
++ 灰色框内为代码，白色框内为输出结果。
+
+***
+
+# RStudio桌面版基础操作
+
+请参考[RStudio桌面版基础操作](https://zhu-group.github.io/ese335/S01.html#First_look_at_RStudio)
+
+# R语言基础教程
+
+请参考[R语言基础教程](https://zhu-group.github.io/ese335/S01.html#Quick_R_tutorial)
+
+## 1 随机采样
+
+```{r}
+# 创建数据
+data <- c(1, 2, 6, 4, 5, 6, 7, 8, 3, 6, 9)
+
+# 函数库
+library(base)
+
+# sample函数
+# 由以上数据中，随机采3个数据
+sample(data, 3)
+
+# 其他采样方式可用查看sample函数
+```
+
+## 2 基础统计量
+
+```{r}
+# 函数库
+library(base)
+
+# 基础统计量，分布为：
+# 最小值 第一分位数 中位数 均值 第三分位数 最大值 
+summary(data)
+
+# 标准差
+sd(data)
+
+# 半内四分范围
+IQR(data)
+
+# 百分位数
+# probs=0.25 表示25%分位数
+quantile(data, probs=0.25)
+```
+
+## 3 偏度与峰态系数
+
+```{r}
+# 函数库
+library(moments)
+
+# 偏度系数
+skewness(data)
+
+# 峰态系数
+kurtosis(data)
+```
+
+## 4 频率分布图
+
+```{r}
+# 函数库
+library(base)
+
+# 频率分布图
+hist(data)
+
+# 其他绘制方式可用查看hist函数
+```
+
+## 5 Box-Whisker图
+
+```{r}
+# 函数库
+library(base)
+
+# 频率分布图
+boxplot(data)
+
+# 其他绘制方式可用查看boxplot函数
+```
+
+## 6 正态分布概率密度
+
+请参考[正态分布](https://zhu-group.github.io/ese335/S05.html#Normal_distribution)
+
+## 7 Box-Cox变换
+
+请参考[Box-Cox变换](https://zhu-group.github.io/ese335/S05.html#Normal_transformation)
+
+## 8 异常值检验
+
+请参考[异常值检验](https://zhu-group.github.io/ese335/S09.html#Outliers)
+
+## 9 数据独立性检验
+
+请参考[独立性检验](https://zhu-group.github.io/ese335/S09.html#Independence)
+
+
