@@ -26,7 +26,7 @@ output:
 
 请参考[R语言基础教程](https://zhu-group.github.io/ese335/S01.html#Quick_R_tutorial)
 
-## 1 随机采样
+# 1 随机采样
 
 ```{r}
 # 创建数据
@@ -42,7 +42,7 @@ sample(data, 3)
 # 其他采样方式可用查看sample函数
 ```
 
-## 2 基础统计量
+# 2 基础统计量
 
 ```{r}
 # 函数库
@@ -63,7 +63,7 @@ IQR(data)
 quantile(data, probs=0.25)
 ```
 
-## 3 偏度与峰态系数
+# 3 偏度与峰态系数
 
 ```{r}
 # 函数库
@@ -76,7 +76,7 @@ skewness(data)
 kurtosis(data)
 ```
 
-## 4 频率分布图
+# 4 频率分布图
 
 ```{r}
 # 函数库
@@ -88,7 +88,7 @@ hist(data)
 # 其他绘制方式可用查看hist函数
 ```
 
-## 5 Box-Whisker图
+# 5 Box-Whisker图
 
 ```{r}
 # 函数库
@@ -100,19 +100,19 @@ boxplot(data)
 # 其他绘制方式可用查看boxplot函数
 ```
 
-## 6 正态分布概率密度
+# 6 正态分布概率密度
 
 请参考[正态分布](https://zhu-group.github.io/ese335/S05.html#Normal_distribution)
 
-## 7 Box-Cox变换
+# 7 Box-Cox变换
 
 请参考[Box-Cox变换](https://zhu-group.github.io/ese335/S05.html#Normal_transformation)
 
-## 8 异常值检验
+# 8 异常值检验
 
 请参考[异常值检验](https://zhu-group.github.io/ese335/S09.html#Outliers)
 
-## 9 数据独立性检验
+# 9 数据独立性检验
 
 请参考[独立性检验](https://zhu-group.github.io/ese335/S09.html#Independence)
 
