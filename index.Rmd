@@ -26,6 +26,8 @@ output:
 
 ### 教学团队
 
+网站: 朱雷（zhul3@sustech.edu.cn）
+
 练习: 朱雷（zhul3@sustech.edu.cn）、沈惠中（shenhz@sustech.edu.cn）  
 
 助教：曾连荣（12332314@mail.sustech.edu.cn）、刘骐鸣（12332334@mail.sustech.edu.cn）、刘逸琪（12331314@mail.sustech.edu.cn）  

@@ -466,20 +466,19 @@ div.tocify {
 <ul>
 <li>练习以R语言实现；</li>
 <li>软件下载地址请参考<a
-href="https://zhu-group.github.io/ams/resource.html">课程资源</a></li>
+href="https://zhu-group.github.io/ams/resource.html">课程资源</a>；</li>
 <li>部分教程请参考南科大环境学院《环境数据分析》网站。网站为英文，请自行翻译；</li>
 <li>灰色框内为代码，白色框内及图片为输出结果。</li>
 </ul>
 <hr />
-<div id="rstudio桌面版基础操作" class="section level1">
-<h1>RStudio桌面版基础操作</h1>
-<p>请参考<a
-href="https://zhu-group.github.io/ese335/S01.html#First_look_at_RStudio">RStudio桌面版基础操作</a></p>
-</div>
-<div id="r语言基础教程" class="section level1">
-<h1>R语言基础教程</h1>
-<p>请参考<a
-href="https://zhu-group.github.io/ese335/S01.html#Quick_R_tutorial">R语言基础教程</a></p>
+<div id="基础操作" class="section level1">
+<h1>0 基础操作</h1>
+<ul>
+<li><p>请参考<a
+href="https://zhu-group.github.io/ese335/S01.html#First_look_at_RStudio">RStudio桌面版基础操作</a></p></li>
+<li><p>请参考<a
+href="https://zhu-group.github.io/ese335/S01.html#Quick_R_tutorial">R语言基础教程</a></p></li>
+</ul>
 </div>
 <div id="随机采样" class="section level1">
 <h1>1 随机采样</h1>
@@ -585,17 +584,17 @@ href="https://zhu-group.github.io/ese335/S01.html#Quick_R_tutorial">R语言基�
 <span id="cb20-32"><a href="#cb20-32" tabindex="-1"></a><span class="fu">text</span>(<span class="sc">-</span><span class="dv">4</span>, <span class="fl">0.25</span>, <span class="st">&quot;N(0, 9)&quot;</span>, <span class="at">col=</span><span class="st">&quot;red&quot;</span>, <span class="at">cex=</span><span class="dv">2</span>)</span></code></pre></div>
 <p><img src="homeworks_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <p>其他请参考<a
-href="https://zhu-group.github.io/ese335/S05.html#Normal_distribution">正态分布</a></p>
+href="https://zhu-group.github.io/ese335/S05.html#Normal_distribution">正态分布</a>。</p>
 </div>
 <div id="box-cox变换" class="section level1">
 <h1>7 Box-Cox变换</h1>
 <p>请参考<a
-href="https://zhu-group.github.io/ese335/S05.html#Normal_transformation">Box-Cox变换</a></p>
+href="https://zhu-group.github.io/ese335/S05.html#Normal_transformation">Box-Cox变换</a>。</p>
 </div>
 <div id="异常值检验" class="section level1">
 <h1>8 异常值检验</h1>
 <p>请参考<a
-href="https://zhu-group.github.io/ese335/S09.html#Outliers">异常值检验</a></p>
+href="https://zhu-group.github.io/ese335/S09.html#Outliers">异常值检验</a>。</p>
 </div>
 <div id="数据独立性检验" class="section level1">
 <h1>9 数据独立性检验</h1>
@@ -612,7 +611,7 @@ href="https://zhu-group.github.io/ese335/S09.html#Outliers">异常值检验</a><
 ## statistic = -0.61791, runs = 4, n1 = 3, n2 = 5, n = 8, p-value = 0.5366
 ## alternative hypothesis: nonrandomness</code></pre>
 <p>其他请参考<a
-href="https://zhu-group.github.io/ese335/S09.html#Independence">独立性检验</a></p>
+href="https://zhu-group.github.io/ese335/S09.html#Independence">独立性检验</a>。</p>
 </div>
 <div id="t-检验" class="section level1">
 <h1>10 <em>t</em> 检验</h1>
@@ -716,7 +715,7 @@ href="https://zhu-group.github.io/ese335/S09.html#Independence">独立性检验<
 <h1>12 方差分析及补充分析</h1>
 <p>请参考<a
 href="https://zhu-group.github.io/ese335/S10.html#One-way_ANOVA_with_R">方差分析</a>与<a
-href="https://zhu-group.github.io/ese335/S11.html#Post-hoc_test_after_one-way_ANOVA">补充分析</a></p>
+href="https://zhu-group.github.io/ese335/S11.html#Post-hoc_test_after_one-way_ANOVA">补充分析</a>。</p>
 </div>
 <div id="相关分析" class="section level1">
 <h1>13 相关分析</h1>
@@ -740,13 +739,13 @@ href="https://zhu-group.github.io/ese335/S11.html#Post-hoc_test_after_one-way_AN
 ##  Pearson&#39;s product-moment correlation
 ## 
 ## data:  x and y
-## t = 18.907, df = 18, p-value = 2.536e-13
+## t = 14.968, df = 18, p-value = 1.336e-11
 ## alternative hypothesis: true correlation is not equal to 0
 ## 95 percent confidence interval:
-##  0.9384008 0.9905525
+##  0.9047875 0.9851796
 ## sample estimates:
 ##       cor 
-## 0.9757358</code></pre>
+## 0.9620969</code></pre>
 <div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" tabindex="-1"></a><span class="co"># Spearman相关性检验</span></span>
 <span id="cb38-2"><a href="#cb38-2" tabindex="-1"></a><span class="co"># 检验：两总体是否相关</span></span>
 <span id="cb38-3"><a href="#cb38-3" tabindex="-1"></a><span class="co"># p-value小于0.05，拒绝H0，即两总体显著相关</span></span>
@@ -755,11 +754,11 @@ href="https://zhu-group.github.io/ese335/S11.html#Post-hoc_test_after_one-way_AN
 ##  Spearman&#39;s rank correlation rho
 ## 
 ## data:  x and y
-## S = 46, p-value = 6.539e-06
+## S = 102, p-value = 4.205e-06
 ## alternative hypothesis: true rho is not equal to 0
 ## sample estimates:
 ##       rho 
-## 0.9654135</code></pre>
+## 0.9233083</code></pre>
 <div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" tabindex="-1"></a><span class="co"># Kendall相关性检验</span></span>
 <span id="cb40-2"><a href="#cb40-2" tabindex="-1"></a><span class="co"># 检验：两总体是否相关</span></span>
 <span id="cb40-3"><a href="#cb40-3" tabindex="-1"></a><span class="co"># p-value小于0.05，拒绝H0，即两总体显著相关</span></span>
@@ -768,16 +767,16 @@ href="https://zhu-group.github.io/ese335/S11.html#Post-hoc_test_after_one-way_AN
 ##  Kendall&#39;s rank correlation tau
 ## 
 ## data:  x and y
-## T = 178, p-value = 9.208e-11
+## T = 171, p-value = 1.731e-08
 ## alternative hypothesis: true tau is not equal to 0
 ## sample estimates:
-##       tau 
-## 0.8736842</code></pre>
+## tau 
+## 0.8</code></pre>
 </div>
 <div id="非参数方法" class="section level1">
 <h1>14 非参数方法</h1>
 <p>请参考<a
-href="https://zhu-group.github.io/ese335/S13.html#Summary_of_non-parametric_tests">非参数方法总结</a></p>
+href="https://zhu-group.github.io/ese335/S13.html#Summary_of_non-parametric_tests">非参数方法总结</a>。</p>
 </div>
 <div id="单变量简单线性回归" class="section level1">
 <h1>15 单变量简单线性回归</h1>
@@ -802,18 +801,18 @@ href="https://zhu-group.github.io/ese335/S13.html#Summary_of_non-parametric_test
 ## 
 ## Residuals:
 ##      Min       1Q   Median       3Q      Max 
-## -0.77224 -0.31706 -0.00833  0.26473  1.09986 
+## -1.35905 -0.30171  0.04915  0.29870  0.95983 
 ## 
 ## Coefficients:
 ##             Estimate Std. Error t value Pr(&gt;|t|)    
-## (Intercept)  0.09817    0.11076   0.886    0.387    
-## x            2.00124    0.13087  15.292 9.33e-12 ***
+## (Intercept)  0.01241    0.13775    0.09    0.929    
+## x            1.99639    0.10726   18.61 3.32e-13 ***
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
-## Residual standard error: 0.4953 on 18 degrees of freedom
-## Multiple R-squared:  0.9285, Adjusted R-squared:  0.9246 
-## F-statistic: 233.8 on 1 and 18 DF,  p-value: 9.335e-12</code></pre>
+## Residual standard error: 0.5669 on 18 degrees of freedom
+## Multiple R-squared:  0.9506, Adjusted R-squared:  0.9479 
+## F-statistic: 346.4 on 1 and 18 DF,  p-value: 3.319e-13</code></pre>
 <div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" tabindex="-1"></a><span class="co"># 添加回归线</span></span>
 <span id="cb44-2"><a href="#cb44-2" tabindex="-1"></a><span class="fu">abline</span>(reg<span class="sc">$</span>coefficients[<span class="dv">1</span>], reg<span class="sc">$</span>coefficients[<span class="dv">2</span>], </span>
 <span id="cb44-3"><a href="#cb44-3" tabindex="-1"></a>       <span class="at">col=</span><span class="st">&quot;red&quot;</span>, <span class="at">lty=</span><span class="dv">2</span>, <span class="at">lwd=</span><span class="dv">2</span>)</span></code></pre></div>

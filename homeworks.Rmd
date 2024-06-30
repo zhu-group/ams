@@ -13,19 +13,17 @@ output:
 **说明：** 
 
 + 练习以R语言实现；
-+ 软件下载地址请参考[课程资源](https://zhu-group.github.io/ams/resource.html)
++ 软件下载地址请参考[课程资源](https://zhu-group.github.io/ams/resource.html)；
 + 部分教程请参考南科大环境学院《环境数据分析》网站。网站为英文，请自行翻译；
 + 灰色框内为代码，白色框内及图片为输出结果。
 
 ***
 
-# RStudio桌面版基础操作
+# 0 基础操作
 
-请参考[RStudio桌面版基础操作](https://zhu-group.github.io/ese335/S01.html#First_look_at_RStudio)
++ 请参考[RStudio桌面版基础操作](https://zhu-group.github.io/ese335/S01.html#First_look_at_RStudio)
 
-# R语言基础教程
-
-请参考[R语言基础教程](https://zhu-group.github.io/ese335/S01.html#Quick_R_tutorial)
++ 请参考[R语言基础教程](https://zhu-group.github.io/ese335/S01.html#Quick_R_tutorial)
 
 # 1 随机采样
 
@@ -138,15 +136,15 @@ text(-4, 0.30, "N(1, 1)", col="blue",  cex=2)
 text(-4, 0.25, "N(0, 9)", col="red", cex=2)
 ```
 
-其他请参考[正态分布](https://zhu-group.github.io/ese335/S05.html#Normal_distribution)
+其他请参考[正态分布](https://zhu-group.github.io/ese335/S05.html#Normal_distribution)。
 
 # 7 Box-Cox变换
 
-请参考[Box-Cox变换](https://zhu-group.github.io/ese335/S05.html#Normal_transformation)
+请参考[Box-Cox变换](https://zhu-group.github.io/ese335/S05.html#Normal_transformation)。
 
 # 8 异常值检验
 
-请参考[异常值检验](https://zhu-group.github.io/ese335/S09.html#Outliers)
+请参考[异常值检验](https://zhu-group.github.io/ese335/S09.html#Outliers)。
 
 # 9 数据独立性检验
 
@@ -159,7 +157,7 @@ library(randtests)
 runs.test(data)
 ```
 
-其他请参考[独立性检验](https://zhu-group.github.io/ese335/S09.html#Independence)
+其他请参考[独立性检验](https://zhu-group.github.io/ese335/S09.html#Independence)。
 
 # 10 *t* 检验
 
@@ -214,7 +212,7 @@ lillie.test(Sample2)
 
 # 12 方差分析及补充分析
 
-请参考[方差分析](https://zhu-group.github.io/ese335/S10.html#One-way_ANOVA_with_R)与[补充分析](https://zhu-group.github.io/ese335/S11.html#Post-hoc_test_after_one-way_ANOVA)
+请参考[方差分析](https://zhu-group.github.io/ese335/S10.html#One-way_ANOVA_with_R)与[补充分析](https://zhu-group.github.io/ese335/S11.html#Post-hoc_test_after_one-way_ANOVA)。
 
 # 13 相关分析
 
@@ -250,7 +248,7 @@ cor.test(x, y, method="kendall", alternative="two.sided", conf.level=0.95)
 
 # 14 非参数方法
 
-请参考[非参数方法总结](https://zhu-group.github.io/ese335/S13.html#Summary_of_non-parametric_tests)
+请参考[非参数方法总结](https://zhu-group.github.io/ese335/S13.html#Summary_of_non-parametric_tests)。
 
 # 15 单变量简单线性回归
 
