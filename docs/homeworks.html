@@ -490,7 +490,7 @@ href="https://zhu-group.github.io/ese335/S01.html#Quick_R_tutorial">R语言基�
 <span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="co"># sample函数</span></span>
 <span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="co"># 由以上数据中，随机采3个数据</span></span>
 <span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a><span class="fu">sample</span>(data, <span class="dv">3</span>)</span></code></pre></div>
-<pre><code>## [1] 2 3 5</code></pre>
+<pre><code>## [1] 1 6 3</code></pre>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="co"># 其他采样方式可用查看sample函数</span></span></code></pre></div>
 </div>
 <div id="基础统计量" class="section level1">
@@ -542,14 +542,47 @@ href="https://zhu-group.github.io/ese335/S01.html#Quick_R_tutorial">R语言基�
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a><span class="co"># 函数库</span></span>
 <span id="cb18-2"><a href="#cb18-2" tabindex="-1"></a><span class="fu">library</span>(base)</span>
 <span id="cb18-3"><a href="#cb18-3" tabindex="-1"></a></span>
-<span id="cb18-4"><a href="#cb18-4" tabindex="-1"></a><span class="co"># 频率分布图</span></span>
+<span id="cb18-4"><a href="#cb18-4" tabindex="-1"></a><span class="co"># Box-Whisker分布图</span></span>
 <span id="cb18-5"><a href="#cb18-5" tabindex="-1"></a><span class="fu">boxplot</span>(data)</span></code></pre></div>
 <p><img src="homeworks_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 <div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a><span class="co"># 其他绘制方式可用查看boxplot函数</span></span></code></pre></div>
 </div>
 <div id="正态分布概率密度" class="section level1">
 <h1>6 正态分布概率密度</h1>
-<p>请参考<a
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" tabindex="-1"></a><span class="co"># 函数库</span></span>
+<span id="cb20-2"><a href="#cb20-2" tabindex="-1"></a><span class="fu">library</span>(base)</span>
+<span id="cb20-3"><a href="#cb20-3" tabindex="-1"></a></span>
+<span id="cb20-4"><a href="#cb20-4" tabindex="-1"></a><span class="co"># 创建数列，-5到5，步长0.01 </span></span>
+<span id="cb20-5"><a href="#cb20-5" tabindex="-1"></a>x        <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="sc">-</span><span class="fl">5.0</span>, <span class="fl">5.0</span>, <span class="at">by=</span><span class="fl">0.01</span>)</span>
+<span id="cb20-6"><a href="#cb20-6" tabindex="-1"></a></span>
+<span id="cb20-7"><a href="#cb20-7" tabindex="-1"></a><span class="co"># 输出正态分布概率密度</span></span>
+<span id="cb20-8"><a href="#cb20-8" tabindex="-1"></a><span class="co"># Mean = 0, sd = 1</span></span>
+<span id="cb20-9"><a href="#cb20-9" tabindex="-1"></a>density1 <span class="ot">&lt;-</span> <span class="fu">dnorm</span>(x, <span class="dv">0</span>, <span class="dv">1</span>)</span>
+<span id="cb20-10"><a href="#cb20-10" tabindex="-1"></a></span>
+<span id="cb20-11"><a href="#cb20-11" tabindex="-1"></a><span class="co"># 画图</span></span>
+<span id="cb20-12"><a href="#cb20-12" tabindex="-1"></a><span class="fu">plot</span>(x, density1, <span class="at">col=</span><span class="st">&quot;black&quot;</span>, <span class="at">xlab=</span><span class="st">&quot;&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Density&quot;</span>, </span>
+<span id="cb20-13"><a href="#cb20-13" tabindex="-1"></a>     <span class="at">type=</span><span class="st">&quot;l&quot;</span>, <span class="at">lwd=</span><span class="dv">3</span>, <span class="at">cex=</span><span class="dv">2</span>, </span>
+<span id="cb20-14"><a href="#cb20-14" tabindex="-1"></a>     <span class="at">xlim=</span><span class="fu">c</span>(<span class="sc">-</span><span class="fl">5.0</span>, <span class="fl">5.0</span>),</span>
+<span id="cb20-15"><a href="#cb20-15" tabindex="-1"></a>     <span class="at">main=</span><span class="st">&quot;PDF of normal distributions&quot;</span>)</span>
+<span id="cb20-16"><a href="#cb20-16" tabindex="-1"></a></span>
+<span id="cb20-17"><a href="#cb20-17" tabindex="-1"></a><span class="co"># 输出正态分布概率密度</span></span>
+<span id="cb20-18"><a href="#cb20-18" tabindex="-1"></a><span class="co"># Mean = 1, sd = 1</span></span>
+<span id="cb20-19"><a href="#cb20-19" tabindex="-1"></a>density2  <span class="ot">&lt;-</span> <span class="fu">dnorm</span>(x, <span class="dv">1</span>, <span class="dv">1</span>)</span>
+<span id="cb20-20"><a href="#cb20-20" tabindex="-1"></a><span class="fu">lines</span>(x, density2, <span class="at">col=</span><span class="st">&quot;blue&quot;</span>, <span class="at">xlab=</span><span class="st">&quot;&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Density&quot;</span>, </span>
+<span id="cb20-21"><a href="#cb20-21" tabindex="-1"></a>     <span class="at">type=</span><span class="st">&quot;l&quot;</span>, <span class="at">lwd=</span><span class="dv">3</span>, <span class="at">cex=</span><span class="dv">2</span>)</span>
+<span id="cb20-22"><a href="#cb20-22" tabindex="-1"></a></span>
+<span id="cb20-23"><a href="#cb20-23" tabindex="-1"></a><span class="co"># 输出正态分布概率密度</span></span>
+<span id="cb20-24"><a href="#cb20-24" tabindex="-1"></a><span class="co"># Mean = 0, sd = 3</span></span>
+<span id="cb20-25"><a href="#cb20-25" tabindex="-1"></a>density3  <span class="ot">&lt;-</span> <span class="fu">dnorm</span>(x, <span class="dv">0</span>, <span class="dv">3</span>)</span>
+<span id="cb20-26"><a href="#cb20-26" tabindex="-1"></a><span class="fu">lines</span>(x, density3, <span class="at">col=</span><span class="st">&quot;red&quot;</span>, <span class="at">xlab=</span><span class="st">&quot;&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Density&quot;</span>, </span>
+<span id="cb20-27"><a href="#cb20-27" tabindex="-1"></a>     <span class="at">type=</span><span class="st">&quot;l&quot;</span>, <span class="at">lwd=</span><span class="dv">3</span>, <span class="at">cex=</span><span class="dv">2</span>)</span>
+<span id="cb20-28"><a href="#cb20-28" tabindex="-1"></a></span>
+<span id="cb20-29"><a href="#cb20-29" tabindex="-1"></a><span class="co"># 添加图例</span></span>
+<span id="cb20-30"><a href="#cb20-30" tabindex="-1"></a><span class="fu">text</span>(<span class="sc">-</span><span class="dv">4</span>, <span class="fl">0.35</span>, <span class="st">&quot;N(0, 1)&quot;</span>, <span class="at">col=</span><span class="st">&quot;black&quot;</span>,   <span class="at">cex=</span><span class="dv">2</span>)</span>
+<span id="cb20-31"><a href="#cb20-31" tabindex="-1"></a><span class="fu">text</span>(<span class="sc">-</span><span class="dv">4</span>, <span class="fl">0.30</span>, <span class="st">&quot;N(1, 1)&quot;</span>, <span class="at">col=</span><span class="st">&quot;blue&quot;</span>,  <span class="at">cex=</span><span class="dv">2</span>)</span>
+<span id="cb20-32"><a href="#cb20-32" tabindex="-1"></a><span class="fu">text</span>(<span class="sc">-</span><span class="dv">4</span>, <span class="fl">0.25</span>, <span class="st">&quot;N(0, 9)&quot;</span>, <span class="at">col=</span><span class="st">&quot;red&quot;</span>, <span class="at">cex=</span><span class="dv">2</span>)</span></code></pre></div>
+<p><img src="homeworks_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>其他请参考<a
 href="https://zhu-group.github.io/ese335/S05.html#Normal_distribution">正态分布</a></p>
 </div>
 <div id="box-cox变换" class="section level1">
@@ -564,8 +597,225 @@ href="https://zhu-group.github.io/ese335/S09.html#Outliers">异常值检验</a><
 </div>
 <div id="数据独立性检验" class="section level1">
 <h1>9 数据独立性检验</h1>
-<p>请参考<a
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a><span class="co"># 函数库</span></span>
+<span id="cb21-2"><a href="#cb21-2" tabindex="-1"></a><span class="fu">library</span>(randtests)</span>
+<span id="cb21-3"><a href="#cb21-3" tabindex="-1"></a></span>
+<span id="cb21-4"><a href="#cb21-4" tabindex="-1"></a><span class="co"># 中位数游程检验</span></span>
+<span id="cb21-5"><a href="#cb21-5" tabindex="-1"></a><span class="co"># p-value大于0.05，无法拒绝H0，即数据独立</span></span>
+<span id="cb21-6"><a href="#cb21-6" tabindex="-1"></a><span class="fu">runs.test</span>(data)</span></code></pre></div>
+<pre><code>## 
+##  Runs Test
+## 
+## data:  data
+## statistic = -0.61791, runs = 4, n1 = 3, n2 = 5, n = 8, p-value = 0.5366
+## alternative hypothesis: nonrandomness</code></pre>
+<p>其他请参考<a
 href="https://zhu-group.github.io/ese335/S09.html#Independence">独立性检验</a></p>
+</div>
+<div id="t-检验" class="section level1">
+<h1>10 <em>t</em> 检验</h1>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" tabindex="-1"></a><span class="co"># 函数库</span></span>
+<span id="cb23-2"><a href="#cb23-2" tabindex="-1"></a><span class="fu">library</span>(base)</span>
+<span id="cb23-3"><a href="#cb23-3" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="#cb23-4" tabindex="-1"></a><span class="co"># 创建样本</span></span>
+<span id="cb23-5"><a href="#cb23-5" tabindex="-1"></a>Sample1   <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">78</span>, <span class="dv">83</span>, <span class="dv">68</span>, <span class="dv">72</span>, <span class="dv">88</span>, <span class="dv">75</span>, <span class="dv">89</span>, <span class="dv">76</span>, <span class="dv">83</span>, <span class="dv">90</span>, <span class="dv">72</span>, <span class="dv">79</span>)</span>
+<span id="cb23-6"><a href="#cb23-6" tabindex="-1"></a>Sample2   <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">73</span>, <span class="dv">88</span>, <span class="dv">74</span>, <span class="dv">77</span>, <span class="dv">91</span>, <span class="dv">79</span>, <span class="dv">93</span>, <span class="dv">81</span>, <span class="dv">82</span>, <span class="dv">89</span>, <span class="dv">77</span>, <span class="dv">85</span>)</span>
+<span id="cb23-7"><a href="#cb23-7" tabindex="-1"></a></span>
+<span id="cb23-8"><a href="#cb23-8" tabindex="-1"></a><span class="co"># 根据实际情况，注意选择不同t检验</span></span>
+<span id="cb23-9"><a href="#cb23-9" tabindex="-1"></a></span>
+<span id="cb23-10"><a href="#cb23-10" tabindex="-1"></a><span class="co"># 单样本t检验</span></span>
+<span id="cb23-11"><a href="#cb23-11" tabindex="-1"></a><span class="co"># 检验：总体均值是否显著大于70</span></span>
+<span id="cb23-12"><a href="#cb23-12" tabindex="-1"></a><span class="co"># p-value小于0.05，拒绝H0，即总体均值显著大于70</span></span>
+<span id="cb23-13"><a href="#cb23-13" tabindex="-1"></a><span class="fu">t.test</span>(Sample1, <span class="at">mu=</span><span class="dv">70</span>, <span class="at">alternative =</span><span class="st">&quot;greater&quot;</span>)</span></code></pre></div>
+<pre><code>## 
+##  One Sample t-test
+## 
+## data:  Sample1
+## t = 4.5043, df = 11, p-value = 0.0004474
+## alternative hypothesis: true mean is greater than 70
+## 95 percent confidence interval:
+##  75.6622     Inf
+## sample estimates:
+## mean of x 
+##  79.41667</code></pre>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" tabindex="-1"></a><span class="co"># 独立样本t检验，假设总体方差相等</span></span>
+<span id="cb25-2"><a href="#cb25-2" tabindex="-1"></a><span class="co"># 检验：总体均值是否相等</span></span>
+<span id="cb25-3"><a href="#cb25-3" tabindex="-1"></a><span class="co"># p-value小于0.05，拒绝H0，即总体均值显著不等</span></span>
+<span id="cb25-4"><a href="#cb25-4" tabindex="-1"></a><span class="fu">t.test</span>(Sample1, Sample2, <span class="at">alternative=</span><span class="st">&quot;two.sided&quot;</span>, <span class="at">var.equal=</span>T)</span></code></pre></div>
+<pre><code>## 
+##  Two Sample t-test
+## 
+## data:  Sample1 and Sample2
+## t = -1.0508, df = 22, p-value = 0.3047
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -8.920627  2.920627
+## sample estimates:
+## mean of x mean of y 
+##  79.41667  82.41667</code></pre>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" tabindex="-1"></a><span class="co"># 独立样本t检验，假设总体方差不等</span></span>
+<span id="cb27-2"><a href="#cb27-2" tabindex="-1"></a><span class="co"># 检验：总体均值是否相等</span></span>
+<span id="cb27-3"><a href="#cb27-3" tabindex="-1"></a><span class="co"># p-value小于0.05，拒绝H0，即总体均值显著不等</span></span>
+<span id="cb27-4"><a href="#cb27-4" tabindex="-1"></a><span class="fu">t.test</span>(Sample1, Sample2, <span class="at">alternative=</span><span class="st">&quot;two.sided&quot;</span>, <span class="at">var.equal=</span>F)</span></code></pre></div>
+<pre><code>## 
+##  Welch Two Sample t-test
+## 
+## data:  Sample1 and Sample2
+## t = -1.0508, df = 21.885, p-value = 0.3048
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -8.922432  2.922432
+## sample estimates:
+## mean of x mean of y 
+##  79.41667  82.41667</code></pre>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" tabindex="-1"></a><span class="co"># 配对样本t检验</span></span>
+<span id="cb29-2"><a href="#cb29-2" tabindex="-1"></a><span class="co"># 检验：配对总体均值是否相等</span></span>
+<span id="cb29-3"><a href="#cb29-3" tabindex="-1"></a><span class="co"># p-value小于0.05，拒绝H0，即配对总体均值显著不等</span></span>
+<span id="cb29-4"><a href="#cb29-4" tabindex="-1"></a><span class="fu">t.test</span>(Sample1, Sample2, <span class="at">alternative=</span><span class="st">&quot;two.sided&quot;</span>, <span class="at">paired=</span>T)</span></code></pre></div>
+<pre><code>## 
+##  Paired t-test
+## 
+## data:  Sample1 and Sample2
+## t = -3, df = 11, p-value = 0.01208
+## alternative hypothesis: true mean difference is not equal to 0
+## 95 percent confidence interval:
+##  -5.2009852 -0.7990148
+## sample estimates:
+## mean difference 
+##              -3</code></pre>
+</div>
+<div id="正态性检验" class="section level1">
+<h1>11 正态性检验</h1>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" tabindex="-1"></a><span class="co"># 函数库</span></span>
+<span id="cb31-2"><a href="#cb31-2" tabindex="-1"></a><span class="fu">library</span>(base)</span>
+<span id="cb31-3"><a href="#cb31-3" tabindex="-1"></a></span>
+<span id="cb31-4"><a href="#cb31-4" tabindex="-1"></a><span class="co"># Shapiro-Wilk测试</span></span>
+<span id="cb31-5"><a href="#cb31-5" tabindex="-1"></a><span class="co"># 检验：样本来自正态总体</span></span>
+<span id="cb31-6"><a href="#cb31-6" tabindex="-1"></a><span class="co"># p-value大于0.05，无法拒绝H0，即样本来自正态总体</span></span>
+<span id="cb31-7"><a href="#cb31-7" tabindex="-1"></a><span class="fu">shapiro.test</span>(Sample1)</span></code></pre></div>
+<pre><code>## 
+##  Shapiro-Wilk normality test
+## 
+## data:  Sample1
+## W = 0.94897, p-value = 0.6219</code></pre>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" tabindex="-1"></a><span class="co"># 函数库</span></span>
+<span id="cb33-2"><a href="#cb33-2" tabindex="-1"></a><span class="fu">library</span>(nortest) </span>
+<span id="cb33-3"><a href="#cb33-3" tabindex="-1"></a><span class="co"># Lilliefors（Kolmogorov-Smirnov）测试</span></span>
+<span id="cb33-4"><a href="#cb33-4" tabindex="-1"></a><span class="co"># 检验：样本来自正态总体</span></span>
+<span id="cb33-5"><a href="#cb33-5" tabindex="-1"></a><span class="co"># p-value大于0.05，无法拒绝H0，即样本来自正态总体</span></span>
+<span id="cb33-6"><a href="#cb33-6" tabindex="-1"></a><span class="fu">lillie.test</span>(Sample2)</span></code></pre></div>
+<pre><code>## 
+##  Lilliefors (Kolmogorov-Smirnov) normality test
+## 
+## data:  Sample2
+## D = 0.12979, p-value = 0.834</code></pre>
+</div>
+<div id="方差分析及补充分析" class="section level1">
+<h1>12 方差分析及补充分析</h1>
+<p>请参考<a
+href="https://zhu-group.github.io/ese335/S10.html#One-way_ANOVA_with_R">方差分析</a>与<a
+href="https://zhu-group.github.io/ese335/S11.html#Post-hoc_test_after_one-way_ANOVA">补充分析</a></p>
+</div>
+<div id="相关分析" class="section level1">
+<h1>13 相关分析</h1>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" tabindex="-1"></a><span class="co"># 创建数据</span></span>
+<span id="cb35-2"><a href="#cb35-2" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">20</span>,<span class="dv">0</span>,<span class="dv">1</span>)</span>
+<span id="cb35-3"><a href="#cb35-3" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="dv">2</span><span class="sc">*</span>x<span class="sc">+</span><span class="fu">rnorm</span>(<span class="dv">20</span>,<span class="dv">0</span>,<span class="fl">0.5</span>)</span>
+<span id="cb35-4"><a href="#cb35-4" tabindex="-1"></a></span>
+<span id="cb35-5"><a href="#cb35-5" tabindex="-1"></a><span class="co"># 散点图</span></span>
+<span id="cb35-6"><a href="#cb35-6" tabindex="-1"></a><span class="fu">plot</span>(x,y)</span></code></pre></div>
+<p><img src="homeworks_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" tabindex="-1"></a><span class="co"># 根据实际情况，注意选择不同相关性检验</span></span>
+<span id="cb36-2"><a href="#cb36-2" tabindex="-1"></a></span>
+<span id="cb36-3"><a href="#cb36-3" tabindex="-1"></a><span class="co"># 函数库</span></span>
+<span id="cb36-4"><a href="#cb36-4" tabindex="-1"></a><span class="fu">library</span>(base)</span>
+<span id="cb36-5"><a href="#cb36-5" tabindex="-1"></a></span>
+<span id="cb36-6"><a href="#cb36-6" tabindex="-1"></a><span class="co"># Pearson相关性检验</span></span>
+<span id="cb36-7"><a href="#cb36-7" tabindex="-1"></a><span class="co"># 检验：两总体是否相关</span></span>
+<span id="cb36-8"><a href="#cb36-8" tabindex="-1"></a><span class="co"># p-value小于0.05，拒绝H0，即两总体显著相关</span></span>
+<span id="cb36-9"><a href="#cb36-9" tabindex="-1"></a><span class="fu">cor.test</span>(x, y, <span class="at">method=</span><span class="st">&quot;pearson&quot;</span>, <span class="at">alternative=</span><span class="st">&quot;two.sided&quot;</span>, <span class="at">conf.level=</span><span class="fl">0.95</span>)</span></code></pre></div>
+<pre><code>## 
+##  Pearson&#39;s product-moment correlation
+## 
+## data:  x and y
+## t = 16.848, df = 18, p-value = 1.817e-12
+## alternative hypothesis: true correlation is not equal to 0
+## 95 percent confidence interval:
+##  0.9235055 0.9881911
+## sample estimates:
+##       cor 
+## 0.9697274</code></pre>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" tabindex="-1"></a><span class="co"># Spearman相关性检验</span></span>
+<span id="cb38-2"><a href="#cb38-2" tabindex="-1"></a><span class="co"># 检验：两总体是否相关</span></span>
+<span id="cb38-3"><a href="#cb38-3" tabindex="-1"></a><span class="co"># p-value小于0.05，拒绝H0，即两总体显著相关</span></span>
+<span id="cb38-4"><a href="#cb38-4" tabindex="-1"></a><span class="fu">cor.test</span>(x, y, <span class="at">method=</span><span class="st">&quot;spearman&quot;</span>, <span class="at">alternative=</span><span class="st">&quot;two.sided&quot;</span>, <span class="at">conf.level=</span><span class="fl">0.95</span>)</span></code></pre></div>
+<pre><code>## 
+##  Spearman&#39;s rank correlation rho
+## 
+## data:  x and y
+## S = 48, p-value = 6.522e-06
+## alternative hypothesis: true rho is not equal to 0
+## sample estimates:
+##       rho 
+## 0.9639098</code></pre>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" tabindex="-1"></a><span class="co"># Kendall相关性检验</span></span>
+<span id="cb40-2"><a href="#cb40-2" tabindex="-1"></a><span class="co"># 检验：两总体是否相关</span></span>
+<span id="cb40-3"><a href="#cb40-3" tabindex="-1"></a><span class="co"># p-value小于0.05，拒绝H0，即两总体显著相关</span></span>
+<span id="cb40-4"><a href="#cb40-4" tabindex="-1"></a><span class="fu">cor.test</span>(x, y, <span class="at">method=</span><span class="st">&quot;kendall&quot;</span>, <span class="at">alternative=</span><span class="st">&quot;two.sided&quot;</span>, <span class="at">conf.level=</span><span class="fl">0.95</span>)</span></code></pre></div>
+<pre><code>## 
+##  Kendall&#39;s rank correlation tau
+## 
+## data:  x and y
+## T = 177, p-value = 2.187e-10
+## alternative hypothesis: true tau is not equal to 0
+## sample estimates:
+##       tau 
+## 0.8631579</code></pre>
+</div>
+<div id="非参数方法" class="section level1">
+<h1>14 非参数方法</h1>
+<p>请参考<a
+href="https://zhu-group.github.io/ese335/S13.html#Summary_of_non-parametric_tests">非参数方法总结</a></p>
+</div>
+<div id="单变量简单线性回归" class="section level1">
+<h1>15 单变量简单线性回归</h1>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" tabindex="-1"></a><span class="co"># 创建数据</span></span>
+<span id="cb42-2"><a href="#cb42-2" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">20</span>,<span class="dv">0</span>,<span class="dv">1</span>)</span>
+<span id="cb42-3"><a href="#cb42-3" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="dv">2</span><span class="sc">*</span>x<span class="sc">+</span><span class="fu">rnorm</span>(<span class="dv">20</span>,<span class="dv">0</span>,<span class="fl">0.5</span>)</span>
+<span id="cb42-4"><a href="#cb42-4" tabindex="-1"></a></span>
+<span id="cb42-5"><a href="#cb42-5" tabindex="-1"></a><span class="co"># 散点图</span></span>
+<span id="cb42-6"><a href="#cb42-6" tabindex="-1"></a><span class="fu">plot</span>(x,y)</span>
+<span id="cb42-7"><a href="#cb42-7" tabindex="-1"></a></span>
+<span id="cb42-8"><a href="#cb42-8" tabindex="-1"></a><span class="co"># 基于最小二乘法，获取最优拟合线的斜率与截距</span></span>
+<span id="cb42-9"><a href="#cb42-9" tabindex="-1"></a>reg            <span class="ot">&lt;-</span> <span class="fu">lm</span>( y <span class="sc">~</span> x )</span>
+<span id="cb42-10"><a href="#cb42-10" tabindex="-1"></a></span>
+<span id="cb42-11"><a href="#cb42-11" tabindex="-1"></a><span class="co"># 输出回归结果</span></span>
+<span id="cb42-12"><a href="#cb42-12" tabindex="-1"></a><span class="co"># Estimate下分别对应截距与斜率</span></span>
+<span id="cb42-13"><a href="#cb42-13" tabindex="-1"></a><span class="co"># Pr对于截距与斜率的p-value，小于0.05, 说明总体参数显著不为0</span></span>
+<span id="cb42-14"><a href="#cb42-14" tabindex="-1"></a><span class="co"># Multiple R-squared为决定系数（R2）</span></span>
+<span id="cb42-15"><a href="#cb42-15" tabindex="-1"></a><span class="fu">summary</span>(reg)</span></code></pre></div>
+<pre><code>## 
+## Call:
+## lm(formula = y ~ x)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1.3616 -0.4018  0.1544  0.4755  0.6611 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  0.02706    0.13491   0.201    0.843    
+## x            1.85233    0.15203  12.184 3.95e-10 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.5976 on 18 degrees of freedom
+## Multiple R-squared:  0.8919, Adjusted R-squared:  0.8858 
+## F-statistic: 148.4 on 1 and 18 DF,  p-value: 3.95e-10</code></pre>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" tabindex="-1"></a><span class="co"># 添加回归线</span></span>
+<span id="cb44-2"><a href="#cb44-2" tabindex="-1"></a><span class="fu">abline</span>(reg<span class="sc">$</span>coefficients[<span class="dv">1</span>], reg<span class="sc">$</span>coefficients[<span class="dv">2</span>], </span>
+<span id="cb44-3"><a href="#cb44-3" tabindex="-1"></a>       <span class="at">col=</span><span class="st">&quot;red&quot;</span>, <span class="at">lty=</span><span class="dv">2</span>, <span class="at">lwd=</span><span class="dv">2</span>)</span></code></pre></div>
+<p><img src="homeworks_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 </div>
 
 
