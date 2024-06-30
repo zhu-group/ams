@@ -210,9 +210,9 @@ library(nortest)
 lillie.test(Sample2)
 ```
 
-# 12 方差分析及补充分析
+# 12 单因素方差分析及补充分析
 
-请参考[方差分析](https://zhu-group.github.io/ese335/S10.html#One-way_ANOVA_with_R)与[补充分析](https://zhu-group.github.io/ese335/S11.html#Post-hoc_test_after_one-way_ANOVA)。
+请参考[单因素方差分析](https://zhu-group.github.io/ese335/S10.html#One-way_ANOVA_with_R)与[补充分析](https://zhu-group.github.io/ese335/S11.html#Post-hoc_test_after_one-way_ANOVA)。
 
 # 13 相关分析
 
