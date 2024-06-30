@@ -465,8 +465,10 @@ div.tocify {
 <p><strong>说明：</strong></p>
 <ul>
 <li>练习以R语言实现；</li>
-<li>部分教程请参考南科大环境学院《环境数据分析》网站。网站为英文，请自行翻译。</li>
-<li>灰色框内为代码，白色框内为输出结果。</li>
+<li>软件下载地址请参考<a
+href="https://zhu-group.github.io/ams/resource.html">课程资源</a></li>
+<li>部分教程请参考南科大环境学院《环境数据分析》网站。网站为英文，请自行翻译；</li>
+<li>灰色框内为代码，白色框内及图片为输出结果。</li>
 </ul>
 <hr />
 <div id="rstudio桌面版基础操作" class="section level1">
@@ -490,7 +492,7 @@ href="https://zhu-group.github.io/ese335/S01.html#Quick_R_tutorial">R语言基�
 <span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="co"># sample函数</span></span>
 <span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="co"># 由以上数据中，随机采3个数据</span></span>
 <span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a><span class="fu">sample</span>(data, <span class="dv">3</span>)</span></code></pre></div>
-<pre><code>## [1] 1 6 3</code></pre>
+<pre><code>## [1] 1 2 8</code></pre>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="co"># 其他采样方式可用查看sample函数</span></span></code></pre></div>
 </div>
 <div id="基础统计量" class="section level1">
@@ -738,13 +740,13 @@ href="https://zhu-group.github.io/ese335/S11.html#Post-hoc_test_after_one-way_AN
 ##  Pearson&#39;s product-moment correlation
 ## 
 ## data:  x and y
-## t = 16.848, df = 18, p-value = 1.817e-12
+## t = 17.115, df = 18, p-value = 1.391e-12
 ## alternative hypothesis: true correlation is not equal to 0
 ## 95 percent confidence interval:
-##  0.9235055 0.9881911
+##  0.9257173 0.9885437
 ## sample estimates:
 ##       cor 
-## 0.9697274</code></pre>
+## 0.9706231</code></pre>
 <div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" tabindex="-1"></a><span class="co"># Spearman相关性检验</span></span>
 <span id="cb38-2"><a href="#cb38-2" tabindex="-1"></a><span class="co"># 检验：两总体是否相关</span></span>
 <span id="cb38-3"><a href="#cb38-3" tabindex="-1"></a><span class="co"># p-value小于0.05，拒绝H0，即两总体显著相关</span></span>
@@ -753,11 +755,11 @@ href="https://zhu-group.github.io/ese335/S11.html#Post-hoc_test_after_one-way_AN
 ##  Spearman&#39;s rank correlation rho
 ## 
 ## data:  x and y
-## S = 48, p-value = 6.522e-06
+## S = 56, p-value = 6.406e-06
 ## alternative hypothesis: true rho is not equal to 0
 ## sample estimates:
 ##       rho 
-## 0.9639098</code></pre>
+## 0.9578947</code></pre>
 <div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" tabindex="-1"></a><span class="co"># Kendall相关性检验</span></span>
 <span id="cb40-2"><a href="#cb40-2" tabindex="-1"></a><span class="co"># 检验：两总体是否相关</span></span>
 <span id="cb40-3"><a href="#cb40-3" tabindex="-1"></a><span class="co"># p-value小于0.05，拒绝H0，即两总体显著相关</span></span>
@@ -766,11 +768,11 @@ href="https://zhu-group.github.io/ese335/S11.html#Post-hoc_test_after_one-way_AN
 ##  Kendall&#39;s rank correlation tau
 ## 
 ## data:  x and y
-## T = 177, p-value = 2.187e-10
+## T = 176, p-value = 4.965e-10
 ## alternative hypothesis: true tau is not equal to 0
 ## sample estimates:
 ##       tau 
-## 0.8631579</code></pre>
+## 0.8526316</code></pre>
 </div>
 <div id="非参数方法" class="section level1">
 <h1>14 非参数方法</h1>
@@ -799,19 +801,19 @@ href="https://zhu-group.github.io/ese335/S13.html#Summary_of_non-parametric_test
 ## lm(formula = y ~ x)
 ## 
 ## Residuals:
-##     Min      1Q  Median      3Q     Max 
-## -1.3616 -0.4018  0.1544  0.4755  0.6611 
+##      Min       1Q   Median       3Q      Max 
+## -1.21866 -0.20195  0.06745  0.27126  0.84035 
 ## 
 ## Coefficients:
-##             Estimate Std. Error t value Pr(&gt;|t|)    
-## (Intercept)  0.02706    0.13491   0.201    0.843    
-## x            1.85233    0.15203  12.184 3.95e-10 ***
+##              Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) -0.008177   0.112796  -0.072    0.943    
+## x            1.892337   0.132550  14.276 2.94e-11 ***
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
-## Residual standard error: 0.5976 on 18 degrees of freedom
-## Multiple R-squared:  0.8919, Adjusted R-squared:  0.8858 
-## F-statistic: 148.4 on 1 and 18 DF,  p-value: 3.95e-10</code></pre>
+## Residual standard error: 0.5035 on 18 degrees of freedom
+## Multiple R-squared:  0.9189, Adjusted R-squared:  0.9143 
+## F-statistic: 203.8 on 1 and 18 DF,  p-value: 2.94e-11</code></pre>
 <div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" tabindex="-1"></a><span class="co"># 添加回归线</span></span>
 <span id="cb44-2"><a href="#cb44-2" tabindex="-1"></a><span class="fu">abline</span>(reg<span class="sc">$</span>coefficients[<span class="dv">1</span>], reg<span class="sc">$</span>coefficients[<span class="dv">2</span>], </span>
 <span id="cb44-3"><a href="#cb44-3" tabindex="-1"></a>       <span class="at">col=</span><span class="st">&quot;red&quot;</span>, <span class="at">lty=</span><span class="dv">2</span>, <span class="at">lwd=</span><span class="dv">2</span>)</span></code></pre></div>
