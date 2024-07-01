@@ -51,8 +51,23 @@ library(base)
 # 最小值 第一四分位数 中位数 均值 第三四分位数 最大值 
 summary(data)
 
+# 范围
+range(data)
+
+# 算术均值
+mean(data)
+
 # 标准差
 sd(data)
+
+# 方差
+var(data)
+
+# 方差
+sd(data)^2
+
+# 变异系数
+sd(data)/mean(data)*100
 
 # 半内四分范围
 IQR(data)
