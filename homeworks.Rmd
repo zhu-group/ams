@@ -70,7 +70,7 @@ sd(data)^2
 sd(data)/mean(data)*100
 
 # 半内四分范围
-IQR(data)
+IQR(data)/2
 
 # 百分位数
 # probs=0.25 表示25%分位数
