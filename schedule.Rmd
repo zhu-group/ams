@@ -14,7 +14,7 @@ title: "日程安排"
 |:----------:|:--------------------------------------------------------------------:|
 前言采样     | [1 前言采样](https://zhu-group.github.io/ams/download/1前言采样.pdf) |
 参数估值     | [2 参数估值](https://zhu-group.github.io/ams/download/2参数估值.pdf) |
-假设检验     | [3 假设检验](https://zhu-group.github.io/ams/download/3假设检验)     |
+假设检验     | [3 假设检验](https://zhu-group.github.io/ams/download/3假设检验.pdf) |
 大小比较     | [4 大小比较](https://zhu-group.github.io/ams/download/4大小比较.pdf) |
 离散分布     | [5 离散分布](https://zhu-group.github.io/ams/download/5离散分布.pdf) |
 方差分析     | [6 方差分析](https://zhu-group.github.io/ams/download/6方差分析.pdf) |
