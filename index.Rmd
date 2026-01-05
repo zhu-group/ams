@@ -34,9 +34,7 @@ output:
 
 应用数理统计方法, 陶澍, 中国环境科学出版社, 1994, 433页  
 
-[教材下载](https://zhu-group.github.io/ams/download/课程教材.pdf)  
-
-[勘误表下载](https://zhu-group.github.io/ams/download/教材勘误.pdf)
+[教材下载](https://zhu-group.github.io/ams/download/课程教材.pdf)   [勘误表下载](https://zhu-group.github.io/ams/download/教材勘误.pdf)
 
 ### 主要参考书
 
