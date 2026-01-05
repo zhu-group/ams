@@ -8,7 +8,7 @@ output:
       smooth_scroll: false
 ---
 
-### 2024暑期课程简介
+### 课程简介
 
 环境科学的研究对象多是受诸多复杂因素影响的随机现象，数理统计方法是研究这些随机现象的有效手段之一。 
 
@@ -26,19 +26,17 @@ output:
 
 ### 教学团队
 
-网站: 朱雷（zhul3@sustech.edu.cn）
+助教：沈惠中（shenhz@sustech.edu.cn）、朱雷（zhul3@sustech.edu.cn）  
 
-练习: 朱雷（zhul3@sustech.edu.cn）、沈惠中（shenhz@sustech.edu.cn）  
-
-助教：曾连荣（12332314@mail.sustech.edu.cn）、刘骐鸣（12332334@mail.sustech.edu.cn）、刘逸琪（12331314@mail.sustech.edu.cn）  
+网站: 朱雷（zhul3@sustech.edu.cn） 最近更新日期：2026-01-05  
 
 ### 教材
 
 应用数理统计方法, 陶澍, 中国环境科学出版社, 1994, 433页  
 
-[教材下载](https://zhu-group.github.io/ams/download/应用数理统计方法_陶澍_清晰版.pdf)  
+[教材下载](https://zhu-group.github.io/ams/download/课程教材.pdf)  
 
-[勘误表下载](https://zhu-group.github.io/ams/download/应用数理统计方法_勘误表.pdf)
+[勘误表下载](https://zhu-group.github.io/ams/download/教材勘误.pdf)
 
 ### 主要参考书
 

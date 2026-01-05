@@ -3,19 +3,19 @@ title: "日程安排"
 ---
 
 **上课时间:**   
-9:00 - 12:00   
+2026年1月12日-18日 上午8:30-11:30   
 
 **上课地点:**   
-三教 207
+智华楼 106
 
 **日程安排:**   
 
-日期  | 主题                                     | 课件下载                                                             |
-|:---:|:----------------------------------------:|:--------------------------------------------------------------------:|
-07/01 | 前言；1.1 基本概念与采样方法             | [1 前言](https://zhu-group.github.io/ams/download/1前言.pdf)         |
-07/02 | 1.2 总体特征及其表述；1.3 数据预处理     | [2 参数估值](https://zhu-group.github.io/ams/download/2参数估值.pdf) |
-07/03 | 2.1 假设检验与假设检验方法               | [3 假设检验](https://zhu-group.github.io/ams/download/3假设检验.pdf) |
-07/04 | 2.2-2.4 大小比较                         | [4 大小比较](https://zhu-group.github.io/ams/download/4大小比较.pdf) |
-07/05 | 3.1-3.2 离散程度比较；3.3-3.4 拟合度检验 | [5 离散分布](https://zhu-group.github.io/ams/download/5离散分布.pdf) |
-07/06 | 4 方差分析                               | [6 方差分析](https://zhu-group.github.io/ams/download/6方差分析.pdf) |
-07/07 | 5.1-5.2 回归分析；5.3-5.4 回归分析       | [7 相关回归](https://zhu-group.github.io/ams/download/7相关回归.pdf) |
+主题         | 课件下载                                                             |
+|:----------:|:--------------------------------------------------------------------:|
+前言采样     | [1 前言采样](https://zhu-group.github.io/ams/download/1前言采样.pdf) |
+参数估值     | [2 参数估值](https://zhu-group.github.io/ams/download/2参数估值.pdf) |
+假设检验     | [3 假设检验](https://zhu-group.github.io/ams/download/3假设检验)     |
+大小比较     | [4 大小比较](https://zhu-group.github.io/ams/download/4大小比较.pdf) |
+离散分布     | [5 离散分布](https://zhu-group.github.io/ams/download/5离散分布.pdf) |
+方差分析     | [6 方差分析](https://zhu-group.github.io/ams/download/6方差分析.pdf) |
+相关回归     | [7 相关回归](https://zhu-group.github.io/ams/download/7相关回归.pdf) |

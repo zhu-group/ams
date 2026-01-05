@@ -14,8 +14,8 @@ output:
 
 **请先安装R, 再安装RStudio桌面版**
 
-* 安装 [R (v4.4.1)](https://cran.rstudio.com/) 
-* 安装 [RStudio桌面版 (2024.04.2+764)](https://rstudio.com/products/rstudio/download/)
+* 安装 [R (v4.5.2)](https://cran.rstudio.com/) 
+* 安装 [RStudio桌面版 (2025.09.2+418)](https://rstudio.com/products/rstudio/download/)
 
 # 可视化网站
 
