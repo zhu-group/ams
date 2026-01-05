@@ -24,11 +24,11 @@ output:
 
 主要从事微量有毒污染物排放、行为、归趋和效应等区域尺度环境过程的研究。目前重点包括全球污染物排放清单、污染物迁移和暴露模拟以及农村生活源污染物生成和对室内外空气质量及健康影响等。在国际学术期刊发表第一或通讯作者论文200余篇。Web of Science引用超过两万次，H指数80。陶澍院士在2020年荣获了北京大学教学成就奖。  
 
-### 教学团队
+### 助教
 
-助教：沈惠中（shenhz@sustech.edu.cn）、朱雷（zhul3@sustech.edu.cn）  
+沈惠中（shenhz@sustech.edu.cn） 
 
-网站: 朱雷（zhul3@sustech.edu.cn） 最近更新日期：2026-01-05  
+朱雷（zhul3@sustech.edu.cn）  
 
 ### 教材
 
@@ -39,6 +39,12 @@ output:
 ### 主要参考书
 
 Rohlf FJ, Sokal RR, Biometry, Freeman, San Francisco.
+
+### 网站
+
+朱雷（zhul3@sustech.edu.cn） 
+
+最近更新日期：2026-01-05  
 
 <img src="figs/logo.jpg" 
         alt="Picture" 
