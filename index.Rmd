@@ -30,6 +30,8 @@ output:
 
 朱雷（zhul3@sustech.edu.cn）  
 
+栾天成（12432900@mail.sustech.edu.cn）  
+
 ### 教材
 
 应用数理统计方法, 陶澍, 中国环境科学出版社, 1994, 433页  
