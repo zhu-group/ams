@@ -46,7 +46,7 @@ Rohlf FJ, Sokal RR, Biometry, Freeman, San Francisco.
 
 朱雷（zhul3@sustech.edu.cn） 
 
-最近更新日期：2026-01-05  
+最近更新日期：2026-01-14  
 
 <img src="figs/logo.jpg" 
         alt="Picture" 
