@@ -10,6 +10,9 @@ navbar:
     - text: "日程安排"
       icon: fa-calendar
       href: schedule.html
+    - text: "课程Q&A"
+      icon: fa-circle-question
+      href: qa.html
     - text: "课后练习"
       icon: fa-laptop
       href: homeworks.html        

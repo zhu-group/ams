@@ -431,6 +431,13 @@ div.tocify {
   </a>
 </li>
 <li>
+  <a href="qa.html">
+    <span class="fa fa-circle-question"></span>
+     
+    课程Q&amp;A
+  </a>
+</li>
+<li>
   <a href="homeworks.html">
     <span class="fa fa-laptop"></span>
      
@@ -491,7 +498,7 @@ href="https://zhu-group.github.io/ese335/S01.html#Quick_R_tutorial">R语言基�
 <span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="co"># sample函数</span></span>
 <span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="co"># 由以上数据中，随机采3个数据</span></span>
 <span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a><span class="fu">sample</span>(data, <span class="dv">3</span>)</span></code></pre></div>
-<pre><code>## [1] 2 4 9</code></pre>
+<pre><code>## [1] 8 2 9</code></pre>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="co"># 其他采样方式可用查看sample函数</span></span></code></pre></div>
 </div>
 <div id="基础描述统计量" class="section level1">
@@ -755,13 +762,13 @@ href="https://zhu-group.github.io/ese335/S11.html#Post-hoc_test_after_one-way_AN
 ##  Pearson&#39;s product-moment correlation
 ## 
 ## data:  x and y
-## t = 9.1679, df = 18, p-value = 3.342e-08
+## t = 17.233, df = 18, p-value = 1.237e-12
 ## alternative hypothesis: true correlation is not equal to 0
 ## 95 percent confidence interval:
-##  0.7770943 0.9632216
+##  0.9266673 0.9886950
 ## sample estimates:
 ##       cor 
-## 0.9075325</code></pre>
+## 0.9710075</code></pre>
 <div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" tabindex="-1"></a><span class="co"># Spearman相关性检验</span></span>
 <span id="cb54-2"><a href="#cb54-2" tabindex="-1"></a><span class="co"># 检验：两总体是否相关</span></span>
 <span id="cb54-3"><a href="#cb54-3" tabindex="-1"></a><span class="co"># p-value小于0.05，拒绝H0，即两总体显著相关</span></span>
@@ -770,11 +777,11 @@ href="https://zhu-group.github.io/ese335/S11.html#Post-hoc_test_after_one-way_AN
 ##  Spearman&#39;s rank correlation rho
 ## 
 ## data:  x and y
-## S = 224, p-value = 2.994e-07
+## S = 54, p-value = 6.442e-06
 ## alternative hypothesis: true rho is not equal to 0
 ## sample estimates:
 ##       rho 
-## 0.8315789</code></pre>
+## 0.9593985</code></pre>
 <div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" tabindex="-1"></a><span class="co"># Kendall相关性检验</span></span>
 <span id="cb56-2"><a href="#cb56-2" tabindex="-1"></a><span class="co"># 检验：两总体是否相关</span></span>
 <span id="cb56-3"><a href="#cb56-3" tabindex="-1"></a><span class="co"># p-value小于0.05，拒绝H0，即两总体显著相关</span></span>
@@ -783,11 +790,11 @@ href="https://zhu-group.github.io/ese335/S11.html#Post-hoc_test_after_one-way_AN
 ##  Kendall&#39;s rank correlation tau
 ## 
 ## data:  x and y
-## T = 161, p-value = 3.319e-06
+## T = 176, p-value = 4.965e-10
 ## alternative hypothesis: true tau is not equal to 0
 ## sample estimates:
 ##       tau 
-## 0.6947368</code></pre>
+## 0.8526316</code></pre>
 </div>
 <div id="非参数方法" class="section level1">
 <h1>14 非参数方法</h1>
@@ -817,18 +824,18 @@ href="https://zhu-group.github.io/ese335/S13.html#Summary_of_non-parametric_test
 ## 
 ## Residuals:
 ##      Min       1Q   Median       3Q      Max 
-## -0.96949 -0.30124 -0.04599  0.22810  1.06151 
+## -0.91501 -0.44628 -0.00024  0.35906  1.22112 
 ## 
 ## Coefficients:
 ##             Estimate Std. Error t value Pr(&gt;|t|)    
-## (Intercept)  0.04744    0.11711   0.405     0.69    
-## x            1.75147    0.15543  11.269 1.38e-09 ***
+## (Intercept) -0.02617    0.14118  -0.185    0.855    
+## x            2.08284    0.17152  12.143 4.17e-10 ***
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
-## Residual standard error: 0.5227 on 18 degrees of freedom
-## Multiple R-squared:  0.8759, Adjusted R-squared:  0.869 
-## F-statistic:   127 on 1 and 18 DF,  p-value: 1.379e-09</code></pre>
+## Residual standard error: 0.6314 on 18 degrees of freedom
+## Multiple R-squared:  0.8912, Adjusted R-squared:  0.8852 
+## F-statistic: 147.5 on 1 and 18 DF,  p-value: 4.168e-10</code></pre>
 <div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" tabindex="-1"></a><span class="co"># 添加回归线</span></span>
 <span id="cb60-2"><a href="#cb60-2" tabindex="-1"></a><span class="fu">abline</span>(reg<span class="sc">$</span>coefficients[<span class="dv">1</span>], reg<span class="sc">$</span>coefficients[<span class="dv">2</span>], </span>
 <span id="cb60-3"><a href="#cb60-3" tabindex="-1"></a>       <span class="at">col=</span><span class="st">&quot;red&quot;</span>, <span class="at">lty=</span><span class="dv">2</span>, <span class="at">lwd=</span><span class="dv">2</span>)</span></code></pre></div>
